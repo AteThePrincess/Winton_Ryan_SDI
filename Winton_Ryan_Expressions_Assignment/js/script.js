@@ -22,7 +22,14 @@ var elecResistance = prompt("What is the Electrical Resistance of your wire?");
 // Request Cross-sectional Area and store it in variable csArea
 var csArea = prompt("What is the Cross-sectional Area of the wire?");
 
+//Creating an array and defining indexes
+var myArray = new Array();
+myArray[0] = wireLength;
+myArray[1] = elecResistance;
+myArray[2] = csArea;
 
-var elecResistivity = elecResistance * csArea / wireLength;
 
-alert("The electrical resistivity of your wire is " + elecResistivity " ohm metres");
+
+var elecResistivity = myArray[1] * myArray[2] / myArray[0];
+
+alert("The electrical resistivity of your wire is " + elecResistivity + " ohm metres");
