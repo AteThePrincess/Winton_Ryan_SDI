@@ -4,7 +4,6 @@ SDI Secion 01
 Instructor Lee Lewis
 Expressions Assignment
 */
-alert("JavaScript works!");
 
 // Create Wire Length variable
 var wireLength;
@@ -29,7 +28,8 @@ myArray[1] = elecResistance;
 myArray[2] = csArea;
 
 
-
+//Calculating Electric Resistivity using our Array indexes
 var elecResistivity = myArray[1] * myArray[2] / myArray[0];
 
+//Outputting the answer to the user.
 alert("The electrical resistivity of your wire is " + elecResistivity + " ohm metres");
