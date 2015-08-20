@@ -14,18 +14,18 @@ var unitOfMeasureMiles = confirm("Our calculator needs distance in miles.\nIf yo
 if(unitOfMeasureMiles === false){
     distance*=0.621371;
     console.log("The store is " + distance + " miles away.")
-}
+} //Turns distance in KM to MI
 else {
 
-}
+} // Leaves distance in MI if it already is.
 
-var carOwned = confirm("Do you own a car? Press OK for yes, cancel for no.");
+var carOwned = confirm("Do you own a car? Press OK for yes, cancel for no."); // Determine if user owns a motor vehicle.
 
 (distance <= 0) ? console.log("The store is " + distance + "miles from here.") : console.log("Please insert a real distance in miles"); //Ternary Operator for making sure the distance is a properly usable number.
 
 
 
-//If the distance is less than 1.5 miles they will walk. If the distance is over 6 miles AND the user owns a car, the car will be taken. Otherwise they will ride their bicycle.
+//If the distance is less than 1.5 miles they will walk. If the distance is over 6.5 miles AND the user owns a car, the car will be taken. Otherwise they will ride their bicycle.
 if(Number(distance) < 1.5){
     console.log("User should walk to the store.")
 }
