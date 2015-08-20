@@ -4,13 +4,14 @@ SDI Secion 01
 Instructor Lee Lewis
 Conditionals Assignment
 */
-alert("JS IS WORKING!");
 
 var distance;
 var carOwned;
-
+var unitOfMeasureMiles;
 
 var distance = prompt("How far is the store from here?"); //Find out how far the store is.
+var unitOfMeasureMiles = confirm("Our calculator needs distance in miles.\nIf your distance is in KM press cancel.\nIf your distance is in MI press OK.");
+
 var carOwned = confirm("Do you own a car? Press OK for yes, cancel for no.");
 
 (distance <= 0) ? console.log("The store is " + distance + "miles from here.") : console.log("Please insert a real distance in miles"); //Ternary Operator for making sure the distance is a properly usable number.
