@@ -10,6 +10,9 @@ var carOwned;
 var unitOfMeasureMiles;
 
 var distance = prompt("How far is the store from here?"); //Find out how far the store is.
+
+var carOwned = confirm("Do you own a car? Press OK for yes, cancel for no."); // Determine if user owns a motor vehicle.
+
 var unitOfMeasureMiles = confirm("Our calculator needs distance in miles.\nIf your distance is in KM press cancel.\nIf your distance is in MI press OK."); //Ensure unit of measure is Miles
 if(unitOfMeasureMiles === false){
     distance*=0.621371;
@@ -19,7 +22,6 @@ else {
 
 } // Leaves distance in MI if it already is.
 
-var carOwned = confirm("Do you own a car? Press OK for yes, cancel for no."); // Determine if user owns a motor vehicle.
 
 (distance <= 0) ? console.log("The store is " + distance + "miles from here.") : console.log("Please insert a real distance in miles"); //Ternary Operator for making sure the distance is a properly usable number.
 
