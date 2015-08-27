@@ -4,14 +4,14 @@ SDI Secion 01
 Instructor Lee Lewis
 Functions Assignment
 */
-var lottoType = confirm("Are you looking for Florida Lottery or Powerball numbers?\nPress OK for Florida Lottery numbers.\nPress Cancel for Powerball numbers."); //Figuring out which lottery they're looking for.
 var ballVar = 0; // Sets up our while statement for later
-
 function pickNumbers(drawMax, drawMin) { //Creates our function called pickNumbers using the arguments drawMax and drawMin
 
     var drawnNumber = Math.ceil(Math.random() * drawMax - drawMin) + drawMin; // Picks a random number between our max and min
     return drawnNumber; // brings that number outside of the function to a usable space in the code
 }
+
+var lottoType = confirm("Are you looking for Florida Lottery or Powerball numbers?\nPress OK for Florida Lottery numbers.\nPress Cancel for Powerball numbers."); //Figuring out which lottery they're looking for.
 
 if(lottoType === true) { // If user prompt tells us we need FL Lottery numbers, this code block runs.
     var lotteryArray = new Array; //Creates an array to store out lottery numbers in.
