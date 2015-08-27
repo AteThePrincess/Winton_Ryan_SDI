@@ -19,8 +19,14 @@ if(lottoType === true) {
     var lotteryArray = new Array;
     while(ballVar < 6) {
         var randomNumber = pickNumbers(53, 1);
-        lotteryArray.push(randomNumber);
-        ballVar++;
+        if(randomNumber === lotteryArray[0,1,2,3,4,5]) {
+            var randomNumber = pickNumbers(53, 1);
+        }
+        else
+        {
+            lotteryArray.push(randomNumber);
+            ballVar++;
+        }
     }
     console.log("Your winning numbers are " + lotteryArray[0] + ", " + lotteryArray[1] + ", " + lotteryArray[2] + ", " + lotteryArray[3] + ", " + lotteryArray[4] + ", " + lotteryArray[5] + ".");
 }
@@ -35,4 +41,3 @@ else {
     console.log("Your winning numbers are " + lotteryArray[0] + ", " + lotteryArray[1] + ", " + lotteryArray[2] + ", " + lotteryArray[3] + ", " + lotteryArray[4] + ", and your PowerBall number is: " + PB + ".");
 
 }
-
